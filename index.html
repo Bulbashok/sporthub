@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Макет</title>
+    <title>Sporthub</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero-container">
+    <div class="main-hero-container">
       <header class="header">
         <div class="header-content">
           <div class="header-left">
@@ -22,20 +22,20 @@
               <li><a href="#">ПОЗIРК</a></li>
               <li><a href="#">ТРЕШ</a></li>
             </ul>
-          </nav>
-          <div class="header-right">
             <div class="burger-menu">
               <span></span>
               <span></span>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
-      <section class="hero">
+      <section class="hero hero--main">
         <div class="container">
-          <div class="hero-content">
-            <p>#ЭКСТРИМ</p>
-            <h1>Юрий Поклад: «Динамо»<br />как бы начинает работать заново</h1>
+          <div class="hero__content">
+            <p class="hero__tag">#ЭКСТРИМ</p>
+            <h1 class="hero__title">
+              Юрий Поклад:«Динамо»<br />как бы начинает работать заново
+            </h1>
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@
     <section class="news-section">
       <div class="container">
         <h2 class="news-title">Последние</h2>
-        <div class="news-grid">
+        <div class="news-grid news-layout-main">
           <div class="news-card news-card--image-top">
             <img
               src="/sporthub/images/news-1.jpg"
@@ -69,7 +69,7 @@
             />
             <div class="news-content">
               <div class="news-meta">
-                <span class="news-date">Сегодня</span>
+                <span class="news-date">Сегодня |</span>
                 <span class="news-tag">#болельщикам</span>
               </div>
               <h3 class="news-heading">
@@ -91,26 +91,35 @@
             />
             <div class="news-content">
               <div class="news-meta">
-                <span class="news-date">Сегодня</span>
-                <span class="news-tag">#спорт</span>
+                <span class="news-date">09.07.19 |</span>
+                <span class="news-tag">#любительский_спорт</span>
               </div>
-              <h3 class="news-heading">Новость 2</h3>
-              <p class="news-text">Текст новости 2</p>
+              <h3 class="news-heading">
+                Японцы лидируют в медальном зачете летней универсиады, белорусы
+                – 25-е. Почему так?
+              </h3>
+              <p class="news-text">
+                И если для «горняков», которые неделей ранее разгромно уступили
+                в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск —
+                формальность, то от «жёлто-синих»...
+              </p>
             </div>
           </div>
-          <div class="news-card news-card--image-top">
-            <img
-              src="/sporthub/images/news-3.jpg"
-              alt="Новость"
-              class="news-img"
-            />
+          <div class="news-card news-card--full-image">
             <div class="news-content">
               <div class="news-meta">
-                <span class="news-date">Сегодня</span>
-                <span class="news-tag">#футбол</span>
+                <span class="news-date">09.07.19 |</span>
+                <span class="news-tag">#Профессиональный_спор</span>
               </div>
-              <h3 class="news-heading">Новость 3</h3>
-              <p class="news-text">Текст новости 3</p>
+              <h3 class="news-heading">
+                Японцы лидируют в медальном зачете летней универсиады, белорусы
+                – 25-е. Почему так?
+              </h3>
+              <p class="news-text">
+                И если для «горняков», которые неделей ранее разгромно уступили
+                в Турине тамошним «быкам» 0:5, визит «Тормнс» в Солигорск —
+                формальность, то от «жёлто-синих»...
+              </p>
             </div>
           </div>
           <div class="news-card news-card--image-top">
@@ -122,10 +131,17 @@
             <div class="news-content">
               <div class="news-meta">
                 <span class="news-date">Сегодня</span>
-                <span class="news-tag">#чемпионат</span>
+                <span class="news-tag">#болельщикам</span>
               </div>
-              <h3 class="news-heading">Новость 4</h3>
-              <p class="news-text">Текст новости 4</p>
+              <h3 class="news-heading">
+                Японцы лидируют в медальном зачете летней универсиады, белорусы
+                – 25-е. Почему так?
+              </h3>
+              <p class="news-text">
+                И если для «горняков», которые неделей ранее разгромно уступили
+                в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск —
+                формальность, то от «жёлто-синих»...
+              </p>
             </div>
           </div>
         </div>
@@ -158,13 +174,13 @@
               />
               <img
                 src="/sporthub/images/autor-2.png"
-                alt="Иван Петров"
+                alt="Юрий Поклад"
                 class="author-avatar"
               />
             </div>
-            <h4 class="author-name">Иван Петров</h4>
-            <p class="author-position">Аналитик</p>
-            <p class="author-text">Комментарии о предстоящем матче</p>
+            <h4 class="author-name">Алексей Михайличенко</h4>
+            <p class="author-position">Главный тренер ф.к. Динамо</p>
+            <p class="author-text">«Динамо» как бы начинает работать заново</p>
           </div>
           <div class="author-card">
             <div class="author-quote">
@@ -179,9 +195,11 @@
                 class="author-avatar"
               />
             </div>
-            <h4 class="author-name">Мария Сидорова</h4>
-            <p class="author-position">Журналист</p>
-            <p class="author-text">Новости из мира спорта</p>
+            <h4 class="author-name">Алексей Михайличенко</h4>
+            <p class="author-position">Главный тренер ф.к. Динамо</p>
+            <p class="author-text">
+              Сергей Корниленко станет играющим тренером «Крыльев советов»
+            </p>
           </div>
           <div class="author-card">
             <div class="author-quote">
@@ -196,46 +214,62 @@
                 class="author-avatar"
               />
             </div>
-            <h4 class="author-name">Андрей Козлов</h4>
-            <p class="author-position">Тренер</p>
-            <p class="author-text">Новый сезон — новые вызовы</p>
+            <h4 class="author-name">Алексей Михайличенко</h4>
+            <p class="author-position">Главный тренер ф.к. Динамо</p>
+            <p class="author-text">«Динамо» как бы начинает работать заново</p>
           </div>
         </div>
-        <div class="news-grid small-grid">
-          <div
-            class="news-card news-card--bg-image"
-            style="background-image: url('/sporthub/images/news-3.jpg')"
-          >
+        <div class="news-grid news-layout-secondary">
+          <div class="news-card news-card--image-top">
+            <img
+              src="/sporthub/images/news-2.jpg"
+              alt="Новость"
+              class="news-img"
+            />
             <div class="news-content">
               <div class="news-meta">
-                <span class="news-date">Сегодня</span>
-                <span class="news-tag">#трансферы</span>
+                <span class="news-date">09.07.19 |</span>
+                <span class="news-tag">#любительский_спорт</span>
               </div>
-              <h3 class="news-heading">Новость 5</h3>
-              <p class="news-text">Текст новости 5</p>
+              <h3 class="news-heading">
+                Японцы лидируют в медальном зачете летней универсиады, белорусы
+                – 25-е. Почему так?
+              </h3>
+              <p class="news-text">
+                И если для «горняков», которые неделей ранее разгромно уступили
+                в Турине тамошним «быкам» 0:5, визит «Торино» в Солигорск —
+                формальность, то от «жёлто-синих»...
+              </p>
             </div>
           </div>
-          <div
-            class="news-card news-card--bg-image"
-            style="background-image: url('news-bg.jpg')"
-          >
+          <div class="news-card news-card--full-image">
             <div class="news-content">
               <div class="news-meta">
-                <span class="news-date">Сегодня</span>
-                <span class="news-tag">#чемпионат</span>
+                <span class="news-date">09.07.19 |</span>
+                <span class="news-tag">#Профессиональный_спор</span>
               </div>
-              <h3 class="news-heading">Новость 6</h3>
-              <p class="news-text">Текст новости 6</p>
+              <h3 class="news-heading">
+                Японцы лидируют в медальном зачете летней универсиады, белорусы
+                – 25-е. Почему так?
+              </h3>
+              <p class="news-text">
+                И если для «горняков», которые неделей ранее разгромно уступили
+                в Турине тамошним «быкам» 0:5, визит «Тормнс» в Солигорск —
+                формальность, то от «жёлто-синих»...
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="hero hero--second">
+    <section class="hero hero--secondary">
       <div class="container">
-        <div class="hero-content">
-          <p>#ЭКСТРИМ</p>
-          <h1>Юрий Поклад: «Динамо»<br />как бы начинает работать заново</h1>
+        <div class="hero__content">
+          <p class="hero__tag">#БОЛЕЛЬЩИКАМ</p>
+          <h2 class="hero__title">
+            Юрий Поклад: «Динамо» как бы<br />
+            начинает работать заново
+          </h2>
         </div>
       </div>
     </section>
@@ -243,7 +277,7 @@
       <div class="container">
         <div class="social-subscribe">
           <div>
-            <h3 class="social-title">Социальные</h3>
+            <h3 class="social-title">Соцсети</h3>
             <div class="social-block">
               <div class="social-icons-container">
                 <img
@@ -290,11 +324,11 @@
               <form class="subscribe-form">
                 <input
                   type="email"
-                  placeholder="Ваш email"
+                  placeholder="Введите ваш email"
                   class="subscribe-input"
                 />
                 <button type="submit" class="subscribe-button">
-                  Отправить
+                  Подписаться
                 </button>
               </form>
             </div>
@@ -304,10 +338,11 @@
     </section>
     <section class="hero hero--third">
       <div class="container">
-        <div class="hero-content">
-          <h1>Экстрим</h1>
-          <p>
-            Интервью с Юрием Покладом. Полный список всех медалей Беларуси на
+        <div class="hero__content">
+          <h2 class="hero__title">Экстрим</h2>
+          <p class="hero__description">
+            Интервью с Юрием Покладом.<br />
+            Полный список всех медалей Беларуси на<br />
             Европейских играх.
           </p>
         </div>
@@ -316,60 +351,58 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <div class="footer-left">
-            <img
-              src="/sporthub/images/logo.png"
-              alt="Логотип Спортхаб"
-              class="footer-logo"
-            />
-            <div class="footer-links">
-              <a href="#" class="footer-link">О ПРОЕКТЕ</a>
-              <a href="#" class="footer-link">ОБРАТНАЯ СВЯЗЬ</a>
-            </div>
+          <img
+            src="/sporthub/images/logo-footer.png"
+            alt="Логотип Спортхаб"
+            class="footer-logo"
+          />
+          <div class="footer-link-first">
+            <a href="#" class="footer-link">О ПРОЕКТЕ</a>
           </div>
-          <div class="footer-right">
-            <div class="footer-ad">
-              <p class="ad-text">РЕКЛАМА</p>
-              <a href="mailto:advertising@sporthub.com" class="ad-email"
-                >advertising@sporthub.com</a
-              >
-            </div>
+          <div class="footer-link-second">
+            <a href="#" class="footer-link">ОБРАТНАЯ СВЯЗЬ</a>
+          </div>
+          <div class="footer-ad">
+            <p class="ad-text">Реклама:</p>
+            <a href="mailto:advertising@sporthub.com" class="ad-email"
+              >advertising@sporthub.com</a
+            >
           </div>
         </div>
         <div class="footer-middle">
           <div class="social-icons-container">
             <img
-              src="/sporthub/images/social/vk.png"
+              src="/sporthub/images/social-footer/vk.png"
               alt="VK"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/facebook.png"
+              src="/sporthub/images/social-footer/facebook.png"
               alt="Facebook"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/instagram.png"
+              src="/sporthub/images/social-footer/instagram.png"
               alt="Instagram"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/youtube 1.png"
+              src="/sporthub/images/social-footer/youtube 1.png"
               alt="YouTube"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/telegram.png"
+              src="/sporthub/images/social-footer/telegram.png"
               alt="Telegram"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/tiktok.png"
+              src="/sporthub/images/social-footer/tiktok.png"
               alt="TikTok"
               class="social-icon"
             />
             <img
-              src="/sporthub/images/social/twitter.png"
+              src="/sporthub/images/social-footer/twitter.png"
               alt="Twitter"
               class="social-icon"
             />
@@ -379,7 +412,7 @@
           <div class="footer-copyright">© 2022 «Спортхаб»</div>
           <div class="footer-developer">
             <img
-              src="/sporthub/images/pras-logo.png"
+              src="/sporthub/images/Group.png"
               alt="Логотип PRAS"
               class="developer-logo"
             />
