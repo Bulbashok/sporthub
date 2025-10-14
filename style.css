@@ -80,7 +80,7 @@ body {
   position: relative;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/images/hero.jpg");
+    url("images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -392,7 +392,7 @@ body {
 .hero--secondary {
   height: 536px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/images/hero-2.png");
+    url("images/hero-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -411,7 +411,7 @@ body {
 .hero--third {
   height: 536px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("/images/hero-3.jpg");
+    url("images/hero-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -568,7 +568,7 @@ body {
 
 .news-card--full-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(/images/news-3.jpg);
+    url(images/news-3.jpg);
   background-position: center;
   height: 580px;
   justify-content: flex-end;
