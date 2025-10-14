@@ -22,13 +22,158 @@
               <li><a href="#">ПОЗIРК</a></li>
               <li><a href="#">ТРЕШ</a></li>
             </ul>
-            <div class="burger-menu">
+            <div class="burger-menu" id="burger-menu">
               <span></span>
               <span></span>
             </div>
           </nav>
         </div>
       </header>
+      <div class="burger-overlay" id="burgerOverlay">
+        <div class="burger-overlay__header">
+          <img
+            src="/images/logo-footer.png"
+            alt="Логотип"
+            class="burger-overlay__logo"
+          />
+          <button class="burger-overlay__close-btn" id="closeBurger">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="burger-overlay__content">
+          <div class="burger-overlay__column">
+            <ul class="burger-overlay__nav-list">
+              <li><a href="#" class="burger-overlay__nav-link">REVIEV</a></li>
+              <li><a href="#" class="burger-overlay__nav-link">ЭКСТРИМ</a></li>
+              <li><a href="#" class="burger-overlay__nav-link">ЛЕГЕНДЫ</a></li>
+              <li>
+                <a href="#" class="burger-overlay__nav-link">ЗОЖ И ТУРИЗМ</a>
+              </li>
+              <li><a href="#" class="burger-overlay__nav-link">ПОЗIРК</a></li>
+              <li><a href="#" class="burger-overlay__nav-link">ТРЕШ</a></li>
+            </ul>
+          </div>
+
+          <div class="burger-overlay__column">
+            <ul class="burger-overlay__secondary-nav-list">
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Футбол</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Хоккей</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Биатлон</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Теннис</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Гандбол</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Баскетбол</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link">Бокс</a>
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Лёгкая атлетика</a
+                >
+              </li>
+              <li>
+                <a href="#" class="burger-overlay__secondary-nav-link"
+                  >Другое</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="burger-overlay__column">
+            <div class="footer-link-first">
+              <a href="#" class="burger-overlay__footer-link">О ПРОЕКТЕ</a>
+            </div>
+            <div class="footer-link-second">
+              <a href="#" class="burger-overlay__footer-link">ОБРАТНАЯ СВЯЗЬ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="burger-overlay__footer">
+          <div class="burger-overlay__social-icons">
+            <img
+              src="/images/social-footer/vk.png"
+              alt="VK"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/facebook.png"
+              alt="Facebook"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/instagram.png"
+              alt="Instagram"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/youtube 1.png"
+              alt="YouTube"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/telegram.png"
+              alt="Telegram"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/tiktok.png"
+              alt="TikTok"
+              class="burger-overlay__social-icon"
+            />
+            <img
+              src="/images/social-footer/twitter.png"
+              alt="Twitter"
+              class="burger-overlay__social-icon"
+            />
+          </div>
+
+          <div class="burger-overlay__footer-bottom">
+            <div class="burger-overlay__footer-ad">
+              <p class="burger-overlay__ad-text">Размещение рекламы:</p>
+              <a
+                href="mailto:ads@sporthub.news"
+                class="burger-overlay__ad-email"
+                >ads@sporthub.news</a
+              >
+            </div>
+            <form class="burger-overlay__subscribe-form">
+              <input
+                type="email"
+                placeholder="Введите ваш email"
+                class="burger-overlay__subscribe-input"
+              />
+              <button type="submit" class="burger-overlay__subscribe-button">
+                Подписаться
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="hero hero--main">
         <div class="container">
           <div class="hero__content">
@@ -385,5 +530,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
