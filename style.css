@@ -2,7 +2,7 @@
 
 :root {
   --font-family: "Roboto Flex", sans-serif;
-  --accent-color: #bc0d00;
+  --accent-color: #be0d00;
   --text-color: #1f1f1f;
   --text-secondary: #828282;
   --bg-light: #f9f9f9;
@@ -1158,6 +1158,14 @@ body {
     padding: 10px;
   }
 
+  .author-text {
+    font-size: 18px;
+  }
+
+  .authors-section {
+    margin: 50px 0 60px;
+  }
+
   .social-subscribe {
     flex-direction: column;
     gap: 30px;
@@ -1169,6 +1177,11 @@ body {
 
   .author-card:not(:first-child) {
     display: none;
+  }
+
+  .hero--secondary .hero__title {
+    font-size: 20px;
+    line-height: 112%;
   }
 
   .footer {
@@ -1265,21 +1278,12 @@ body {
     height: 290px;
   }
 
-  .authors-section {
-    margin: 50px 0;
-  }
-
   .author-card:not(:first-child) {
     display: none;
   }
 
   .news-layout-secondary {
     margin-bottom: 20px;
-  }
-
-  .hero--secondary .hero__title {
-    font-size: 20px;
-    line-height: 112%;
   }
 
   .hero--secondary {
@@ -1301,7 +1305,7 @@ body {
   }
 
   .social-title {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     margin-left: 15px;
   }
 
@@ -1332,5 +1336,14 @@ body {
 
   .hero--third .hero__title {
     margin-bottom: 10px;
+  }
+
+  .footer-ad {
+    text-align: center;
+  }
+
+  .footer-link,
+  .footer-ad .ad-email {
+    font-size: 14px;
   }
 }
