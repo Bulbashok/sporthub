@@ -45,7 +45,6 @@
             <span>&times;</span>
           </button>
         </div>
-
         <div class="burger-overlay__content">
           <div class="burger-overlay__column">
             <ul class="burger-overlay__nav-list">
@@ -59,7 +58,6 @@
               <li><a href="#" class="burger-overlay__nav-link">ТРЕШ</a></li>
             </ul>
           </div>
-
           <div class="burger-overlay__column">
             <ul class="burger-overlay__secondary-nav-list">
               <li>
@@ -107,7 +105,6 @@
               </li>
             </ul>
           </div>
-
           <div class="burger-overlay__column">
             <div class="footer-link-first">
               <a href="#" class="burger-overlay__footer-link">О ПРОЕКТЕ</a>
@@ -117,7 +114,6 @@
             </div>
           </div>
         </div>
-
         <div class="burger-overlay__footer">
           <div class="burger-overlay__social-icons">
             <img
@@ -156,7 +152,6 @@
               class="burger-overlay__social-icon"
             />
           </div>
-
           <div class="burger-overlay__footer-bottom">
             <div class="burger-overlay__footer-ad">
               <p class="burger-overlay__ad-text">Размещение рекламы:</p>
@@ -450,7 +445,8 @@
         </div>
       </div>
     </section>
-    <section class="hero hero--third">
+    <section class="hero hero--third" id="heroSlider">
+      <div class="hero-slider-bg" id="heroSliderBg"></div>
       <div class="container">
         <div class="hero__content">
           <h2 class="hero__title">Экстрим</h2>
@@ -461,6 +457,13 @@
           </p>
         </div>
       </div>
+      <button class="slider-btn slider-btn--prev" aria-label="Предыдущий">
+        <
+      </button>
+      <button class="slider-btn slider-btn--next" aria-label="Следующий">
+        >
+      </button>
+      <div class="slider-dots" id="sliderDots"></div>
     </section>
     <footer class="footer">
       <div class="container">
@@ -536,5 +539,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <div class="backdrop" id="backdrop"></div>
   </body>
 </html>
