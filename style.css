@@ -218,7 +218,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding-top: 6px;
+  padding-right: 6px;
 }
 
 .burger-overlay__logo {
@@ -227,9 +228,13 @@ body {
 
 .burger-overlay__close-btn {
   background: none;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  color: var(--accent-color);
   border: none;
-  color: white;
-  font-size: 32px;
+  font-size: 28px;
   cursor: pointer;
   padding: 0;
   line-height: 1;
@@ -243,7 +248,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin: 82px 0;
+  margin: 90px 0 80px;
 }
 
 .burger-overlay__column {
@@ -315,6 +320,14 @@ body {
   flex-direction: column;
 }
 
+.burger-overlay__nav-list {
+  margin-left: 50px;
+}
+
+.burger-overlay__secondary-nav-list {
+  margin-left: 15px;
+}
+
 .burger-overlay__nav-link,
 .burger-overlay__secondary-nav-link,
 .burger-overlay__footer-link {
@@ -345,11 +358,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
+  margin-right: 90px;
   flex-wrap: wrap;
-}
-
-.burger-overlay__social-icon {
   height: 48px;
   width: auto;
 }
@@ -387,7 +398,7 @@ body {
 }
 
 .burger-overlay__subscribe-input {
-  padding: 8px 12px;
+  padding: 8px 0px;
   border: none;
   border-bottom: 1px solid #fff;
   width: 300px;
@@ -984,11 +995,36 @@ body {
   .header-content {
     padding: 10px;
   }
+
+  .burger-menu {
+    transform: translateX(0px);
+  }
+
+  .footer-copyright {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 1024px) {
   .burger-menu {
     transform: none;
+  }
+
+  .burger-overlay__social-icons {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .burger-overlay__content {
+    margin: 20px 0 10px;
+  }
+
+  .burger-overlay__column {
+    align-items: center;
+  }
+
+  .burger-overlay__social-icons {
+    margin-right: 0px;
   }
 
   .social-subscribe-section {
@@ -1151,7 +1187,7 @@ body {
   }
 
   .burger-overlay__social-icons {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 
   .social-block {
