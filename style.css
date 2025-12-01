@@ -651,7 +651,6 @@ body {
 
 .news-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .news-card .news-content {
@@ -702,7 +701,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url(images/news-3.jpg);
   background-position: center;
-  height: 580px;
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-position: center 30%;
